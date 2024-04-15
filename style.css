@@ -1,21 +1,86 @@
-/* Reset CSS */
-* {
-    padding: 0;
-    margin: 0;
-    /* height: 100%; */
+@font-face {
+    font-family: norse-bold;
+    src: url(Norse-Bold.otf);
 }
 
-/* body {
-
-} */
+/* Reset CSS */
+body, html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: Roboto, sans-serif;
+}
 
 .container {
     display: flex;
     height: 100vh;
 }
 
-.background-img {
-    /* width: 50; */
-    height: 100%;
-    display: block; /* Remove extra space below image */
+.section:nth-child(odd) {
+    flex: 1;
+    background-image: url(background-img.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
 }
+
+
+.bg-opaque {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 10rem;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-img {
+    width: 8rem;
+}
+
+.logo-text {
+    font-size: 7rem;
+    color: #fff;
+    font-family: norse-bold, sans-serif;
+    margin: 0;
+} 
+
+.section:nth-child(even) {
+    padding: 7rem 4rem;
+    flex: 2;
+}
+
+/* .container-right {
+    position: absolute;
+    left: 30%;
+    /* width: 50%;
+} */
+
+
+/* .logo-container {
+    position: absolute;
+    /* width: auto;
+    opacity: 0.6;
+    color: #fff;
+    display: flex;
+    background: #000;
+}
+
+
+.background-img {
+    /* width: 50;
+    position: absolute;
+    height: 100%;
+    /* display: block; Remove extra space below image
+}
+
+.logo-img {
+    /* border: #000;
+    opacity: 1;
+    /* background-color: #000; */
+    /* position: absolute;
+} */
