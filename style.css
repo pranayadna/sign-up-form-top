@@ -72,13 +72,13 @@ body, html {
     margin-bottom: 40px;
     display: flex;
     justify-content: flex-start;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Flex Wrap */
 }
 
 .label-container {
     width: 300px;
     display: flex;
-    margin: 0 4rem;
+    margin: 1rem 4rem;
     flex-direction: column;
 }
 
