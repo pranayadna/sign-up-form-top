@@ -25,7 +25,6 @@ body, html {
     position: relative;
 }
 
-
 .bg-opaque {
     background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
@@ -50,37 +49,99 @@ body, html {
 } 
 
 .section:nth-child(even) {
-    padding: 7rem 4rem;
     flex: 2;
+    position: relative;
 }
 
-/* .container-right {
-    position: absolute;
-    left: 30%;
-    /* width: 50%;
-} */
+.form-header {
+    margin: 5rem 4rem 3rem 4rem;
+}
 
-
-/* .logo-container {
+.form-container {
+    background-color: lightgray;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    width: 100%;
     position: absolute;
-    /* width: auto;
-    opacity: 0.6;
-    color: #fff;
+}
+
+.form-title {
+    margin: 1rem 4rem 1rem 4rem;
+}
+
+.form-row {
+    margin-bottom: 40px;
     display: flex;
-    background: #000;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
-
-.background-img {
-    /* width: 50;
-    position: absolute;
-    height: 100%;
-    /* display: block; Remove extra space below image
+.label-container {
+    display: flex;
+    margin: 0 4rem;
+    flex-direction: column;
 }
 
-.logo-img {
-    /* border: #000;
-    opacity: 1;
-    /* background-color: #000; */
-    /* position: absolute;
-} */
+label {
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
+}
+
+input {
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+}
+
+input:focus {
+    border: 1px solid blue;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+input[type="password"]:invalid {
+    border: 1px solid #596D48;
+}
+
+.error {
+    color: #596D48;
+    font-size: 0.7rem;
+    margin: 0;
+}
+
+.form-button {
+    margin: 24rem 0 0 4rem;
+}
+
+button.form-button {
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #596D48;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+p.form-button {
+    margin: 20px 4rem;
+}
+
+.login {
+    text-decoration: none;
+    color: #596D48;
+}
+
+/* Utils */
+.break {
+    height: 50px;
+}
+
+.font-bold {
+    font-size: 0.9rem;
+    font-weight: bold;
+}

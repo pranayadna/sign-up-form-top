@@ -15,40 +15,58 @@
             </div>
         </div>
         <div class="section">
-            <h1>This is not real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</h1>
-            <h1>You <em>know</em> you want to.</h1>
-            
-            <!-- <br>
-            <br> -->
+            <div class="form-header">
+                <h1>This is not real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</h1>
+                <h1>You <em>know</em> you want to.</h1>
+            </div>
+
             <form action="">
                 <div class="form-container">
-                    <h3>Let's do this!</h3>
+                    <h3 class="form-title">Let's do this!</h3>
                     
                     <!-- six input with labels -->
-                    <label for="">first label</label>
-                    <input type="text">
+                    <div class="form-row">
+                        <div class="label-container">
+                            <label for="">FIRST NAME</label>
+                            <input type="text">
+                        </div>
+                        
+                        <div class="label-container">
+                            <label for="">LAST NAME</label>
+                            <input type="text">
+                        </div>
+                    </div>
                     
-                    <label for="">second label</label>
-                    <input type="text">
+                    <div class="form-row">
+                        <div class="label-container">
+                            <label for="">EMAIL</label>
+                            <input type="text">
+                        </div>
+                        
+                        <div class="label-container">
+                            <label for="">PHONE NUMBER</label>
+                            <input type="text">
+                        </div>
+                    </div>
                     
-                    <label for="">third label</label>
-                    <input type="text">
-                    
-                    <label for="">fourth label</label>
-                    <input type="text">
-                    
-                    <label for="">fifth label</label>
-                    <input type="text">
-                    
-                    <label for="">sixth label</label>
-                    <input type="text">
-                    
+                    <div class="form-row">
+                        <div class="label-container">
+                            <label for="">PASSWORD</label>
+                            <input type="password" required>
+                            <p class="error">* Passwords do not match</p>
+                        </div>
+                        
+                        <div class="label-container">
+                            <label for="">CONFIRM PASSWORD</label>
+                            <input type="password" required>
+                        </div>
+                    </div>
                 </div>
 
-                <button type="submit">create account</button>
+                <button class="form-button" type="submit">Create Account</button>
             </form>
 
-            <p>already have account?<button>login</button></p>
+            <p class="form-button font-bold">Already have account? <a href="#" class="login">Log in</a></p>
         </div>
     </div>
 </body>
