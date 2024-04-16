@@ -58,7 +58,7 @@ body, html {
 }
 
 .form-container {
-    background-color: lightgray;
+    /* background-color: lightgray; */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     width: 100%;
     position: absolute;
@@ -76,6 +76,7 @@ body, html {
 }
 
 .label-container {
+    width: 300px;
     display: flex;
     margin: 0 4rem;
     flex-direction: column;
